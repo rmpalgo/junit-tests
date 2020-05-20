@@ -1,8 +1,13 @@
 public class Student {
     public static long id;
+    public static String name;
 
 
     public static long getId() {
-        return 0;
+        return id;
+    }
+
+    public static String getName() {
+        return "";
     }
 }
