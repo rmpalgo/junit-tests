@@ -19,8 +19,10 @@ public class StudentTest {
     }
 
     @Test
-    public void testGetName() {
-        assertEquals(null, ron.getName());
+    public void testFieldsStudent() {
+        assertEquals(0, ron.getId());
+        assertEquals("", ron.getName());
+        assertEquals(1, ron.getGrades().size());
     }
 
 

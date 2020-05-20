@@ -18,4 +18,9 @@ public class Student {
     public String getName() {
         return name;
     }
+
+    public ArrayList<Integer> getGrades() {
+        return this.grades;
+    }
+
 }
