@@ -34,9 +34,13 @@ public class Student {
         }
         return sum / this.grades.size() ;
     }
-
-
+    
     public void updateGrade(int loc, int newGrade) {
         this.grades.add(loc, newGrade);
+    }
+
+
+    public void deleteGrade(int index) {
+        
     }
 }

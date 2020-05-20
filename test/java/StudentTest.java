@@ -52,6 +52,12 @@ public class StudentTest {
 
     }
 
+    @Test
+    public void testDeleteGrade() {
+        ron.deleteGrade(1);
+        assertSame(1, ron.getGrades().size());
+    }
+
 
 
 
