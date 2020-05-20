@@ -37,6 +37,6 @@ public class Student {
 
 
     public void updateGrade(int loc, int newGrade) {
-        this.grades.add(1, 98);
+        this.grades.add(loc, newGrade);
     }
 }
