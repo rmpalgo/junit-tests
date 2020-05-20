@@ -12,8 +12,10 @@ public class StudentTest {
 
 
     @Test
-    public void testGetId() {
-        assertEquals(0, ron.getId());
+    public void testCreateStudent() {
+        Student jack = null;
+        assertNull(jack);
+        assertNotNull(ron);
     }
 
     @Test
