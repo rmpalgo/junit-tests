@@ -49,6 +49,7 @@ public class StudentTest {
         assertSame(98, ron.getGrades().get(1));
         ron.updateGrade(0, 99);
         assertSame(99, ron.getGrades().get(0));
+        assertEquals(98.5, ron.getAverage(), 0);
 
     }
 
