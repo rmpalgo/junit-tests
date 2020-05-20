@@ -43,6 +43,13 @@ public class StudentTest {
         assertNotEquals(100, ron.getAverage(), 0);
     }
 
+    @Test
+    public void testUpdateGrade() {
+        ron.updateGrade(1, 98);
+        assertSame(98, ron.getGrades().get(1));
+
+    }
+
 
 
 
