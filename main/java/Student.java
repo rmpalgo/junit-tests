@@ -41,6 +41,6 @@ public class Student {
 
 
     public void deleteGrade(int index) {
-        this.grades.remove(1);
+        this.grades.remove(index);
     }
 }

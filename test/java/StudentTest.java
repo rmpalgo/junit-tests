@@ -59,7 +59,7 @@ public class StudentTest {
         ron.addGrade(100);
         assertSame(2, ron.getGrades().size());
         ron.deleteGrade(0);
-        assertSame(null, ron.getGrades().get(0));
+        assertSame(1, ron.getGrades().size());
     }
 
 
