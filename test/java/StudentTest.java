@@ -11,8 +11,12 @@ public class StudentTest {
 
     @Test
     public void testGetName() {
-        assertEquals("", Student.getName());
+        Student newStudent = new Student();
+        assertEquals(null, Student.getName());
     }
+
+    @Test
+    public void test
 
 
 }

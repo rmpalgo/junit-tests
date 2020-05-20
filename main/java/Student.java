@@ -1,13 +1,21 @@
+import java.util.ArrayList;
+
 public class Student {
-    public static long id;
-    public static String name;
+    private long id;
+    private String name;
+    private ArrayList<Integer> grades;
 
+    public Student(long id, String name) {
+        this.id = id;
+        this.name = name;
+        this.grades = new ArrayList<>();
+    }
 
-    public static long getId() {
+    public long getId() {
         return id;
     }
 
-    public static String getName() {
-        return "";
+    public String getName() {
+        return name;
     }
 }
