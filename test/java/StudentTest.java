@@ -8,6 +8,8 @@ public class StudentTest {
     @Before
     public void instantiateStudent() {
         ron = new Student(1L, "Ron");
+        ron.addGrade(98);
+        ron.addGrade(99);
     }
 
 
@@ -22,17 +24,15 @@ public class StudentTest {
     public void testFieldsStudent() {
         assertEquals(1, ron.getId());
         assertEquals("Ron", ron.getName());
-        assertEquals(0, ron.getGrades().size());
+        assertEquals(2, ron.getGrades().size());
         assertNotEquals(0, ron.getId());
         assertNotEquals("", ron.getName());
-        assertNotEquals(1, ron.getGrades().size());
+        assertNotEquals(3, ron.getGrades().size());
     }
 
     @Test
     public void testAddGrade() {
-        ron.addGrade(98);
         assertSame(98, ron.getGrades().get(0));
-        ron.addGrade(99);
         assertSame(99, ron.getGrades().get(1));
         assertNotSame(ron.getGrades().get(0), ron.getGrades().get(1));
     }
@@ -40,7 +40,7 @@ public class StudentTest {
     @Test
     public void testGetAverageGrade() {
         assertEquals(98.5, ron.getAverage(), 0);
-
+        assertNotEquals(100, ron.getAverage(), 0);
     }
 
 
