@@ -47,6 +47,8 @@ public class StudentTest {
     public void testUpdateGrade() {
         ron.updateGrade(1, 98);
         assertSame(98, ron.getGrades().get(1));
+        ron.updateGrade(0, 99);
+        assertSame(99, ron.getGrades().get(0));
 
     }
 
