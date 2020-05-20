@@ -28,6 +28,12 @@ public class StudentTest {
         assertNotEquals(1, ron.getGrades().size());
     }
 
+    @Test
+    public void testAddGrade() {
+        ron.addGrade(98);
+        assertSame(98, ron.getGrades().get(0));
+    }
+
 
 
 
