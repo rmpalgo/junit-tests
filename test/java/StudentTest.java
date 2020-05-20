@@ -3,20 +3,25 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class StudentTest {
+    private Student ron;
+
+    @Before
+    public void instantiateStudent() {
+        ron = new Student(1L, "Ron");
+    }
+
 
     @Test
     public void testGetId() {
-        assertEquals(0, Student.getId());
+        assertEquals(0, ron.getId());
     }
 
     @Test
     public void testGetName() {
-        Student newStudent = new Student();
-        assertEquals(null, Student.getName());
+        assertEquals(null, ron.getName());
     }
 
-    @Test
-    public void test
+
 
 
 }
