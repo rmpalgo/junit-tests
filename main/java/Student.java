@@ -40,7 +40,7 @@ public class Student {
     }
 
 
-    public void deleteGrade(int index) {
-        this.grades.remove(index);
+    public void deleteGrade(int i) {
+        this.grades.remove(i);
     }
 }
